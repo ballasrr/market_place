@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block title %}Подтверждение email{% endblock title
+%} {% block header_title %}Подтверждение email адреса{% endblock header_title %}
+{% block content %}
+<p>Здравствуйте, {{ user_name }}!</p>
+<p>Для завершения регистрации необходимо подтвердить ваш email адрес.</p>
+<p>
+  <a href="{{ verification_url }}" class="button">Подтвердить email</a>
+</p>
+<p>Или перейдите по ссылке:</p>
+<p>{{ verification_url }}</p>
+<p>
+  Если вы не регистрировались на нашем сайте, просто проигнорируйте это письмо.
+</p>
+{% endblock content %}
