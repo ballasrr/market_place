@@ -101,7 +101,7 @@ class CategoryRouter(BaseRouter):
             path="/{category_id}",
             response_model=CategoryResponseSchema,
             status_code=status.HTTP_200_OK,
-            summary="Получение категории по ID",
+            summary="Получение категории по id",
         )
         async def get_category_by_id(
             category_id: int,

@@ -8,7 +8,7 @@ from app.core.exceptions import (
     CategoryNotFoundError,
     ForbiddenError,
     ProductNotFoundError,
-    StorageError,
+    StorageError
 )
 from app.core.integrations.storage import ProductS3DataManager
 from app.models import Product, UserModel

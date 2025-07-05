@@ -11,7 +11,7 @@ from app.models.v1.categories import Category
 from app.models.v1.payments import PaymentMethod
 from app.models.v1.products import Product
 from app.models.v1.users import UserModel, UserRole
-
+from app.models.v1.favorites import FavoriteModel  # Явный импорт
 __all__ = [
     "BaseModel",
     "UserModel",
@@ -22,4 +22,5 @@ __all__ = [
     "Cart",
     "CartItem",
     "Category",
+    "FavoriteModel"
 ]

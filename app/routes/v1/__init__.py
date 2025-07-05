@@ -7,7 +7,7 @@ from app.routes.v1.profile import ProfileRouter
 from app.routes.v1.registration import RegisterRouter
 from app.routes.v1.users import UserRouter
 from app.routes.v1.verification import VerificationRouter
-
+from app.routes.v1.favorites import FavoriteRouter
 
 class APIv1(BaseRouter):
     def configure_routes(self):
@@ -19,3 +19,4 @@ class APIv1(BaseRouter):
         self.router.include_router(CategoryRouter().get_router())
         self.router.include_router(ProductRouter().get_router())
         self.router.include_router(CartRouter().get_router())
+        self.router.include_router(FavoriteRouter().get_router())

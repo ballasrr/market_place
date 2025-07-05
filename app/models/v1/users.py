@@ -136,6 +136,7 @@ class UserModel(BaseModel):
         back_populates="user", cascade="all, delete-orphan"
     )
     cart: Mapped["Cart"] = relationship(back_populates="user", uselist=False)
+    favorites = relationship("FavoriteModel", back_populates="user")
     # orders: Mapped[list["Order"]] = relationship(back_populates="user")
     # reviews: Mapped[list["ProductReview"]] = relationship(back_populates="user")
     # wishlist: Mapped[list["WishlistItem"]] = relationship(back_populates="user")

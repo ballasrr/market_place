@@ -57,6 +57,14 @@ from .v1.products import (
     ProductResponseSchema,
     ProductUpdateSchema,
 )
+from .v1.favorites import (
+    FavoriteBaseSchema,
+    FavoriteCreateSchema,
+    FavoriteDeleteSchema,
+    FavoriteListResponseSchema,
+    FavoriteResponseSchema,
+    FavoriteSuccessResponseSchema,
+)
 from .v1.profile import (
     InvalidCurrentPasswordResponseSchema,
     PasswordFormSchema,
